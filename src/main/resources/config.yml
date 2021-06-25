@@ -1,0 +1,22 @@
+api:
+  # URL to use when checking bans, do not modify.
+  host: api.cheatbreaker.com
+  # API key to use when checking bans
+  key: e14437c2-148b-47ce-8594-06737aa6b747
+
+# The plugin messaging channel
+message-channel: 'CB-Client'
+
+auth:
+  # Disallows the player to join if they are cheatbreaker banned
+  kick-if-banned: true
+  # The disallow message
+  kick-message: '&cCheatBreaker authentication failure\nContact staff with error code 0x0A'
+
+commands:
+  # Usage: /isbanned <player>
+  # - Returns <if the player is cheatbreaker banned>
+  isbanned.enabled: true
+  # Usage: /cheatbreaker <player>
+  # - Returns <if player is running cheatbreaker>
+  cheatbreaker.enabled: true
