@@ -9,7 +9,7 @@ The CheatBreaker API will allow you to detect when a player is running CheatBrea
 
 ## Reporting an issue
 
-If you suspect an issue you can submit one [here](https://github.com/cheatbreakerv2/cheatbreakerapi/issues).
+If you suspect an issue you can submit one [here](https://github.com/CheatBreakerRemastered/cheatbreakerapi/issues).
 
 ## Get the Source
 
@@ -27,11 +27,11 @@ If you suspect an issue you can submit one [here](https://github.com/cheatbreake
 
 ## Contributing
 
-You can submit a [pull request](https://github.com/CheatBreakerV2/CheatBreakerAPI/pulls) with your changes.
+You can submit a [pull request](https://github.com/CheatBreakerRemastered/CheatBreakerAPI/pulls) with your changes.
 
 ## Documentation
 
-Documentation can be found on the [wiki pages](https://github.com/cheatbreakerv2/cheatbreakerapi/wiki).
+Documentation can be found on the [wiki pages](https://github.com/CheatBreakerRemastered/cheatbreakerapi/wiki).
 
 ---
 
@@ -39,7 +39,5 @@ Documentation can be found on the [wiki pages](https://github.com/cheatbreakerv2
 
 **General:** Approved for public release on 12/29/2019.
 
-**Details:** This release is not supported or maintained and was released only to showcase some of the early functionality and things that were possible with the CheatBreaker Bukkit API. Keep in mind, this was an internal version of the API that was going to be overhauled for a public release. Additionally, this 
-[CheatBreakerV2/CheatBreakerAPINetHandler](https://github.com/CheatBreakerV2/CheatBreakerAPINetHandler), which is not publicly available at this time.
 
-**License:** [GNU/GPL v3](https://github.com/CheatBreakerV2/CheatBreakerAPI/blob/master/LICENSE)
+**License:** [GNU/GPL v3](https://github.com/CheatBreakerRemastered/CheatBreakerAPI/blob/master/LICENSE)
