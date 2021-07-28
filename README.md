@@ -3,7 +3,7 @@
     <img src="https://user-images.githubusercontent.com/3434520/59546542-3a1a4a80-8ee4-11e9-8e40-ca8832664aef.jpg" width="150" height="150"/>
 </p>
 
-## CheatBreakerAPI
+# CheatBreakerAPI
 
 The CheatBreaker API will allow you to detect when a player is running CheatBreaker, enable and disable HUD modules, allow x-ray for your staff, and much more.
 
