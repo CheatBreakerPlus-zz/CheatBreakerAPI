@@ -9,13 +9,13 @@ The CheatBreaker API will allow you to detect when a player is running CheatBrea
 
 ## Reporting an issue
 
-If you suspect an issue you can submit one [here](https://github.com/CheatBreakerRemastered/cheatbreakerapi/issues).
+If you suspect an issue you can submit one [here](https://github.com/CheatBreakerPlus/CheatBreakerAPI/issues).
 
 ## Get the Source
 
 1. Install maven `sudo apt-get install maven`
 2. Verify installation `mvn -v`
-3. Clone the repository `git clone git@github.com:CheatBreakerV2/CheatBreakerAPI.git`
+3. Clone the repository `git clone git@github.com:CheatBreakerPlus/CheatBreakerAPI.git`
 4. Navigate to the new folder `cd cheatbreakerapi`
 5. Import `pom.xml` into your IDE
 
@@ -27,17 +27,8 @@ If you suspect an issue you can submit one [here](https://github.com/CheatBreake
 
 ## Contributing
 
-You can submit a [pull request](https://github.com/CheatBreakerRemastered/CheatBreakerAPI/pulls) with your changes.
+You can submit a [pull request](https://github.com/CheatBreakerPlus/CheatBreakerAPI/pulls) with your changes.
 
 ## Documentation
 
-Documentation can be found on the [wiki pages](https://github.com/CheatBreakerRemastered/cheatbreakerapi/wiki).
-
----
-
-### Approval for Public Release
-
-**General:** Approved for public release on 12/29/2019.
-
-
-**License:** [GNU/GPL v3](https://github.com/CheatBreakerRemastered/CheatBreakerAPI/blob/master/LICENSE)
+Documentation can be found on the [wiki pages](https://github.com/CheatBreakerPlus/CheatBreakerAPI/wiki).
