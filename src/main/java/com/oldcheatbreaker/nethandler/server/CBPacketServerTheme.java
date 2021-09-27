@@ -8,9 +8,6 @@ import lombok.Setter;
 
 import java.io.IOException;
 
-/**
- * @author ArcaneCiCi ~ Best CheatBreaker Developer WorldWide <3
- */
 @Getter
 @Setter
 public class CBPacketServerTheme extends CBPacket {
