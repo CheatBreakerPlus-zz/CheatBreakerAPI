@@ -5,7 +5,7 @@ api:
   key: e14437c2-148b-47ce-8594-06737aa6b747
 
 # The plugin messaging channel
-message-channel: 'CB-Client'
+message-channel: 'CBRM-Client'
 
 auth:
   # Disallows the player to join if they are cheatbreaker banned
