@@ -35,7 +35,8 @@ import java.util.stream.Collectors;
 @Getter
 public final class CheatBreakerAPI extends JavaPlugin implements Listener {
 
-    public Set<UUID> playersRunningCheatBreaker, playersNotRegistered = new HashSet<>();
+    public Set<UUID> playersRunningCheatBreaker = new HashSet<>();
+    public Set<UUID> playersNotRegistered = new HashSet<>();
 
     public final Map<UUID, List<CBPacket>> cbPacketQueue = new HashMap<>();
 
