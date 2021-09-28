@@ -46,4 +46,4 @@ For example, on player login, you'd have this:
 
 **Please note: this example was introduced as a test packet and is not visually pleasing, the sole purpose is for you to fine tune colors to your liking.**
 
-`CheatBreakerAPI.getInstance().sendPacket(player, new CBPacketServerTheme(Color.BLACK.getRGB(), Color.GREEN.getRGB, Color.BLUE.getRGB(), Color.MAGENTA.getRGB(), Color.GREEN.getRGB(), Color.RED.getRGB))`
+`CheatBreakerAPI.getInstance().sendPacket(player, new CBPacketServerTheme(Color.BLACK.getRGB(), Color.GREEN.getRGB(), Color.BLUE.getRGB(), Color.MAGENTA.getRGB(), Color.GREEN.getRGB(), Color.RED.getRGB()));
