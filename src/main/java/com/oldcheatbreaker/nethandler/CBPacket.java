@@ -43,6 +43,7 @@ public abstract class CBPacket {
         addPacket(25, CBPacketWorldBorder.class);
         addPacket(26, CBPacketWorldBorderUpdate.class);
         addPacket(27, CBPacketWorldBorderRemove.class);
+        addPacket(32, CBPacketServerTheme.class);
     }
 
     @Getter
