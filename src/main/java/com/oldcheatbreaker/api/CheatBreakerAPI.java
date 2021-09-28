@@ -1,6 +1,5 @@
 package com.oldcheatbreaker.api;
 
-import com.comphenix.protocol.ProtocolLibrary;
 import com.google.common.collect.ImmutableSet;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
@@ -132,23 +131,6 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
                 .map(Bukkit::getPlayer)
                 .collect(Collectors.toSet())
         );
-    }
-
-    /**
-     * Get the protocol version of a {@link Player}
-     *
-     * @param player The {@link Player}
-     * @return The version that the user is on as a {@link String}
-     */
-    public String getVersion(Player player) {
-        switch (ProtocolLibrary.getProtocolManager().getProtocolVersion(player)) {
-            case 5:
-                return "1.7";
-            case 47:
-                return "1.8";
-            default:
-                return "N/A";
-        }
     }
 
     /**

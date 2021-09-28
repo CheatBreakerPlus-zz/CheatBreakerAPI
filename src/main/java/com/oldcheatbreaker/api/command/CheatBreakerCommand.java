@@ -22,7 +22,7 @@ public class CheatBreakerCommand implements CommandExecutor {
             CheatBreakerAPI plugin = CheatBreakerAPI.getInstance();
 
             if (plugin.isRunningCheatBreaker(player.getUniqueId())) {
-                sender.sendMessage(ChatColor.GREEN + player.getName() + " is playing on CheatBreaker " + ChatColor.GRAY + "(" + plugin.getVersion(player) + ")");
+                sender.sendMessage(ChatColor.GREEN + player.getName() + " is playing on CheatBreaker " + ChatColor.GRAY + "(1.7.10)");
             } else sender.sendMessage(ChatColor.RED + player.getName() + " is not playing on CheatBreaker.");
         } else sender.sendMessage(ChatColor.RED + "That player is not online.");
 
