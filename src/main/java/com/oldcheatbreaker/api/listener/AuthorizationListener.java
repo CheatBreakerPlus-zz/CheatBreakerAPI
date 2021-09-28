@@ -18,7 +18,7 @@ public class AuthorizationListener implements Listener {
         plugin.isCheatBreakerBanned(event.getUniqueId(), value ->
                 event.disallow(AsyncPlayerPreLoginEvent.Result.KICK_OTHER, plugin.getConfig().getString(
                         "auth.kick-message",
-                        "&cCheatBreaker authentication failure\nContact staff with error code 0x0A")
+                        "&cCheatBreaker+ authentication failure\nContact staff with error code 0x0A")
                         .replaceAll("\n", "\n"))
         );
     }

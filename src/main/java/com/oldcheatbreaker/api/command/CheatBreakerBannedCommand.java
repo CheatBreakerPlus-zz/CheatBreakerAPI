@@ -36,8 +36,12 @@ public class CheatBreakerBannedCommand implements CommandExecutor {
         } else uuidStringTuple = new Tuple<>(target.getUniqueId(), target.getName());
 
 
-        CheatBreakerAPI.getInstance().isCheatBreakerBanned(uuidStringTuple.getKey(), value ->
-                sender.sendMessage((value ? ChatColor.RED : ChatColor.GREEN) + uuidStringTuple.getValue() + " is" + (value ? "" : " not") + " currently CheatBreaker banned."));
+        try {
+            CheatBreakerAPI.getInstance().isCheatBreakerBanned(uuidStringTuple.getKey(), value ->
+                    sender.sendMessage((value ? ChatColor.RED : ChatColor.GREEN) + uuidStringTuple.getValue() + " is" + (value ? "" : " not") + " currently CheatBreaker+ banned."));
+        } catch (Exception ex) {
+            sender.sendMessage(ChatColor.RED + "The bans API seems to be down, try again later!");
+        }
 
         return false;
 
