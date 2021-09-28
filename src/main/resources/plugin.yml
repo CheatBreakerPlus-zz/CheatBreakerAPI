@@ -7,5 +7,7 @@ main: com.oldcheatbreaker.api.CheatBreakerAPI
 load: STARTUP
 commands:
   isbanned:
+    aliases: [iscbbanned]
+
   cheatbreaker:
     aliases: [cb]

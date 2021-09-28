@@ -6,6 +6,7 @@ import com.oldcheatbreaker.nethandler.server.CBPacketDeleteVoiceChannel;
 import com.oldcheatbreaker.nethandler.server.CBPacketVoiceChannel;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
+import lombok.Setter;
 import org.bukkit.entity.Player;
 
 import java.util.*;
@@ -18,7 +19,7 @@ public class VoiceChatHandler {
     @Getter private final List<VoiceChannel> voiceChannels = new ArrayList<>();
     public final Map<UUID, List<UUID>> muteMap = new HashMap<>();
     private final CheatBreakerAPI plugin;
-    public boolean voiceEnabled;
+    @Setter public boolean voiceEnabled;
 
     public void createBulkChannels(VoiceChannel... voiceChannels) {
         this.voiceChannels.addAll(Arrays.asList(voiceChannels));
