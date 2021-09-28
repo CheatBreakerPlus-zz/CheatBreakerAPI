@@ -3,7 +3,7 @@ version: 7f9b6de
 description: Revisioned CheatBreakerAPI plugin
 author: CheatBreakerPlus Development Team
 website: https://oldcheatbreaker.com
-main: com.cheatbreaker.api.CheatBreakerAPI
+main: com.oldcheatbreaker.api.CheatBreakerAPI
 load: STARTUP
 commands:
   isbanned:
