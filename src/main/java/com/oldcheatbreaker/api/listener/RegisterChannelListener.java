@@ -18,7 +18,7 @@ public class RegisterChannelListener implements Listener {
 
     @EventHandler
     public void onRegister(PlayerRegisterChannelEvent event) {
-        if (event.getChannel().equals(CheatBreakerAPI.getInstance().getCheatBreakerMessageChannel())) {
+        if (event.getChannel().equals(CheatBreakerAPI.getInstance().getMessageChannel())) {
             plugin.playersNotRegistered.remove(event.getPlayer().getUniqueId());
             plugin.playersRunningCheatBreaker.add(event.getPlayer().getUniqueId());
 

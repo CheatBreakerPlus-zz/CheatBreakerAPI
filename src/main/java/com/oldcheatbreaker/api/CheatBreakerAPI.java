@@ -36,11 +36,14 @@ import java.util.stream.Collectors;
 @Getter
 public final class CheatBreakerAPI extends JavaPlugin implements Listener {
 
-    public final Map<UUID, List<CBPacket>> cbPacketQueue = new HashMap<>();
     public Set<UUID> playersRunningCheatBreaker, playersNotRegistered = new HashSet<>();
-    private String cheatBreakerMessageChannel;
-    @Setter
-    private CBNetHandler cbNetHandlerServer = new CBNetHandlerImpl();
+
+    public final Map<UUID, List<CBPacket>> cbPacketQueue = new HashMap<>();
+
+    @Setter private CBNetHandler netHandler = new CBNetHandlerImpl();
+
+    private String messageChannel;
+
     private CooldownHandler cooldownHandler;
     private StaffModuleHandler staffModuleHandler;
     private TeammatesHandler teammatesHandler;
@@ -63,7 +66,7 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
         this.saveDefaultConfig();
         FileConfiguration config = getConfig();
 
-        this.cheatBreakerMessageChannel = "CBRM-Client";
+        this.messageChannel = "CBRM-Client";
 
         this.cooldownHandler = new CooldownHandler(this);
         this.staffModuleHandler = new StaffModuleHandler(this);
@@ -79,13 +82,13 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
         this.waypointHandler = new WaypointHandler(this);
 
         Messenger messenger = getServer().getMessenger();
-        messenger.registerOutgoingPluginChannel(this, cheatBreakerMessageChannel);
-        messenger.registerIncomingPluginChannel(this, cheatBreakerMessageChannel, (channel, player, bytes) -> {
-            CBPacket packet = CBPacket.handle(cbNetHandlerServer, bytes, player);
+        messenger.registerOutgoingPluginChannel(this, messageChannel);
+        messenger.registerIncomingPluginChannel(this, messageChannel, (channel, player, bytes) -> {
+            CBPacket packet = CBPacket.handle(netHandler, bytes, player);
             CBPacketReceivedEvent event = new CBPacketReceivedEvent(player, packet);
             Bukkit.getPluginManager().callEvent(event);
             if (!event.isCancelled())
-                packet.process(cbNetHandlerServer);
+                packet.process(netHandler);
         });
 
         Bukkit.getPluginManager().registerEvents(new RegisterChannelListener(this), this);
@@ -186,7 +189,7 @@ public final class CheatBreakerAPI extends JavaPlugin implements Listener {
 
     public boolean sendPacket(Player player, CBPacket packet) {
         if (isRunningCheatBreaker(player)) {
-            player.sendPluginMessage(this, cheatBreakerMessageChannel, CBPacket.getPacketData(packet));
+            player.sendPluginMessage(this, messageChannel, CBPacket.getPacketData(packet));
             Bukkit.getPluginManager().callEvent(new CBPacketSentEvent(player, packet));
             return true;
         } else if (!playersNotRegistered.contains(player.getUniqueId())) {

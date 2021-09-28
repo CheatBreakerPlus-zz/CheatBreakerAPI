@@ -1,7 +1,7 @@
 name: CheatBreakerAPI-Revision
 version: 7f9b6de
 description: Revisioned CheatBreakerAPI plugin
-author: CheatBreaker Reimagined Development Team
+author: CheatBreakerPlus Development Team
 website: https://oldcheatbreaker.com
 main: com.cheatbreaker.api.CheatBreakerAPI
 load: STARTUP

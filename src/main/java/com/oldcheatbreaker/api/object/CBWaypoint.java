@@ -10,22 +10,14 @@ import org.bukkit.Location;
 @AllArgsConstructor
 public final class CBWaypoint {
 
-    @Getter
-    private final String name;
-    @Getter
-    private final int x;
-    @Getter
-    private final int y;
-    @Getter
-    private final int z;
-    @Getter
-    private final String world;
-    @Getter
-    private final int color;
-    @Getter
-    private final boolean forced;
-    @Getter
-    private final boolean visible = true;
+    @Getter private final String name;
+    @Getter private final int x;
+    @Getter private final int y;
+    @Getter private final int z;
+    @Getter private final String world;
+    @Getter private final int color;
+    @Getter private final boolean forced;
+    @Getter private final boolean visible;
 
     public CBWaypoint(String name, Location location, int color, boolean forced, boolean visible) {
         this(
@@ -51,4 +43,5 @@ public final class CBWaypoint {
                 true
         );
     }
+
 }

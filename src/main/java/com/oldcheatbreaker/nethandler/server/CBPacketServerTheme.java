@@ -11,6 +11,7 @@ import java.io.IOException;
 /**
  * @author ArcaneCiCi ~ Best CheatBreaker Developer WorldWide <3
  */
+
 @Getter
 @Setter
 public class CBPacketServerTheme extends CBPacket {
@@ -42,12 +43,8 @@ public class CBPacketServerTheme extends CBPacket {
     }
 
     @Override
-    public void read(ByteBufWrapper in) throws IOException {
-
-    }
+    public void read(ByteBufWrapper in) throws IOException { }
 
     @Override
-    public void process(ICBNetHandler handler) {
-
-    }
+    public void process(ICBNetHandler handler) { }
 }

@@ -14,7 +14,7 @@ public class UnregisterChannelListener implements Listener {
 
     @EventHandler
     public void onUnregister(PlayerUnregisterChannelEvent event) {
-        if (!event.getChannel().equals(CheatBreakerAPI.getInstance().getCheatBreakerMessageChannel()))
+        if (!event.getChannel().equals(CheatBreakerAPI.getInstance().getMessageChannel()))
             return;
 
         plugin.playersRunningCheatBreaker.remove(event.getPlayer().getUniqueId());
