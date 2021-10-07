@@ -36,7 +36,7 @@ Server Themes are a completely new feature that has the ability to change how Ch
 
 This feature can only be shown to the player when they have their Color Theme option set to "Server".
 
-##How it works
+## How it works
 It works the exact same way you'd send any other packet to the client.
 
 ### How to send this packet correctly
@@ -46,4 +46,4 @@ For example, on player login, you'd have this:
 
 **Please note: this example was introduced as a test packet and is not visually pleasing, the sole purpose is for you to fine tune colors to your liking.**
 
-`CheatBreakerAPI.getInstance().sendPacket(player, new CBPacketServerTheme(Color.BLACK.getRGB(), Color.GREEN.getRGB(), Color.BLUE.getRGB(), Color.MAGENTA.getRGB(), Color.GREEN.getRGB(), Color.RED.getRGB()));
+`CheatBreakerAPI.getInstance().sendPacket(player, new CBPacketServerTheme(Color.BLACK.getRGB(), Color.GREEN.getRGB(), Color.BLUE.getRGB(), Color.MAGENTA.getRGB(), Color.GREEN.getRGB(), Color.RED.getRGB()));`
