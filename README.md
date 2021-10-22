@@ -37,9 +37,8 @@ Server Themes are a completely new feature that has the ability to change how Ch
 This feature can only be shown to the player when they have their Color Theme option set to "Server".
 
 ## How it works
-It works the exact same way you'd send any other packet to the client.
+It works the exact same way you'd send any other packet to the client, just like Waypoints, and Team View!
 
-### How to send this packet correctly
 When sending a packet, make sure you define the colors correctly, you may use Integers, Hex, or RGB values.
 
 For example, on player login, you'd have this:
