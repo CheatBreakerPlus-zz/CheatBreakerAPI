@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img src="https://oldcheatbreaker.com/assets/images/CheatBreaker.gif" width="150" height="150"/>
+    <img src="https://cheatbreakerplus.com/assets/images/CheatBreaker.gif" width="150" height="150"/>
 </p>
 
 # CheatBreakerAPI
